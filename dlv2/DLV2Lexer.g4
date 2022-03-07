@@ -13,7 +13,7 @@ BLANK_SPACE: WS-> skip;
 
 mode MODEL;
 COMMA           : ',';
-INTEGER_CONSTANT: INT;
+INTEGER_CONSTANT: '-'?INT;
 IDENTIFIER      : [a-zA-Z][a-zA-Z0-9_]*;
 MODEL_END       : '}'-> mode(DEFAULT_MODE);
 STRING_CONSTANT : '"'~["]*'"';

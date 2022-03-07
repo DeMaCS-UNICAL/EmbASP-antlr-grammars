@@ -16,7 +16,7 @@ WEIGHTED_MODEL_LABEL: 'Best model:';
 
 COMMA           : ',';
 IDENTIFIER      : [a-zA-Z][a-zA-Z0-9_]*;
-INTEGER_CONSTANT: '0'|[1-9][0-9]*;
+INTEGER_CONSTANT: '-'?'0'|[1-9][0-9]*;
 STRING_CONSTANT : '"'~["]*'"';
 TERMS_BEGIN     : '(';
 TERMS_END       : ')';
